@@ -1,6 +1,7 @@
 import asyncio
 import random
 import re
+import os
 from telethon import TelegramClient, events
 
 # ==== CONFIG ====
