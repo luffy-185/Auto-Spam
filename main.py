@@ -4,11 +4,11 @@ import re
 from telethon import TelegramClient, events
 
 # ==== CONFIG ====
-API_ID = 
-API_HASH = ""
-SESSION = "rdmm_session"
+API_ID = int(os.getenv('API_ID'))
+API_HASH = os.getenv('API_HASH')
+SESSION = os.getenv('SESSION_STRING')
 BOT_DM = "@Slave_waifu_bot"  # Target bot DM
-ADMIN_ID = 
+ADMIN_ID = int(os.getenv('OWNER_ID'))
 
 # ==== STATE ====
 rdm_spamming = False
